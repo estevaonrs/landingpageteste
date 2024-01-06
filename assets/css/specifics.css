@@ -1,0 +1,1231 @@
+/*
+----------------------------
+SPECIFICS CSS RULES
+----------------------------
+01 - NAVBAR
+02 - HEADER
+03 - MAIN 
+    3.1 - SECTION 01 - Principal
+    3.2 - SECTION 02 - About Repasse 
+    3.3 - SECTION 03 - How it works
+    3.4 - SECTION 04 - How to sign up
+    3.5 - SECTION 05 - Benefits
+    3.6 - SECTION 06 - Value
+04 - FAQ
+05 - CONTACT 
+06 - FINAL CTA
+07 - FOOTER
+    7.1 - FOOTER COPYRIGHT
+    MEDIA QUERIES
+*/
+
+/* 
+----------------------------
+01 - NAVBAR 
+----------------------------
+*/
+#navbar {
+    background-color: var(--varcolor04);
+    border-bottom: 5px solid var(--varcolor01);
+  }
+    
+  #navbar a:hover {
+    color: #535353;
+  }
+     
+  .navbar-brand {
+    display: flex;
+  }
+    
+  .navbar-brand img {
+    width: 200px;
+  }
+    
+  #navbar-items .navbar-nav .nav-link {
+    color: var(--varcolor02);
+    font-size: 14px;
+  }
+  
+  #navbar-items .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+    
+  li.active a{
+    border-bottom: 2px solid #535353;
+  }
+  
+  #navbar-items .nav-item {
+    margin: 0 1em;
+  }
+    
+  #button-navbar {
+    width: 130px;
+    font-size: 15px;
+    border: none;
+    color: var(--varcolor02);
+    border-radius: 4px;
+  }
+    
+  #button-navbar:hover {
+    filter: brightness(120%);
+  }
+    
+  .nav-bar-icon {
+    color: var(--varcolor01);
+    font-size: 1.2em;
+  }
+    
+  /* Navbar scroll theme */
+  #navbar.active {
+    background-color: var(--varcolor04);
+  }
+    
+  /* 
+  ----------------------------
+  02 - HEADER 
+  ----------------------------
+  */
+  /* Header Hero */
+  #header-hero-bg  {
+    background-image: url('../images/header.png');
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    display: flex;
+  }
+    
+  /* Header Text */
+  #header-text {
+    margin-top: 220px;
+    margin-bottom: 150px;
+  }
+    
+  #header-title {
+    font-size: 2.4em;
+    color: var(--varcolor02);
+    margin-top: 70px;
+  }
+  
+  #header-title, 
+  .header-button {
+    margin-right: 70px;
+  }
+   
+  .header-description,
+  .description-value {
+     color: var(--varcolor02);
+  }
+  
+  .header-description {
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .description-value {
+    font-weight: 500;
+    font-size: 20px;
+  }
+    
+  .secondary-title {
+    font-weight: 900;
+  }
+  
+  #header-slogan {
+    margin-top: -140px;
+  }
+
+  #header-img  {
+    width: 70%;
+    margin-top: -200px;
+  }
+  
+  #header-value {
+    color: #242423;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-shadow: 
+        -2px -2px 0 var(--varcolor01), 
+         2px -2px 0 var(--varcolor01), 
+        -2px  2px 0 var(--varcolor01), 
+         2px  2px 0 var(--varcolor01); 
+  }
+
+  #value-style,
+  #header-value {
+      margin-right: 100px;
+      margin-top: -30px;
+  }
+
+  /* Header CTA button */
+  .header-button {
+    background-color: var(--varcolor04);
+    color: var(--varcolor02);
+    padding: 12px;
+    width: 260px;
+  }
+  
+  .header-button:hover {
+    background-color: var(--varcolor02);
+    font-weight: 700;
+    color: var(--varcolor04);
+  }
+  
+  /*===== All SECTION TITLE Style =====*/
+.div-title .line,
+.line-center {
+  background: rgb(32,129,195);
+  width: 150px;
+  height: 8px;
+  margin-bottom: 20px !important;
+ }
+
+.line-center {
+  margin: auto;
+}
+    
+  /* Button animation  */
+  .bounce-button button {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: none;
+    opacity: .8;
+    border-radius: 4px;
+  }
+    
+  .bounce-button:hover {
+    animation: bounce 0.8s infinite;
+    opacity: 1;
+    color: #fff;
+  }
+    
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+    
+  /* 
+  ----------------------------
+  03 - MAIN  
+  ----------------------------
+  */
+  /* 3.1 - SECTION 01 - Principal */
+  #principal {
+    text-align: center;
+    color: #6f6f6f;
+    padding-bottom: 40px;
+  }
+    
+  #titleprincipal {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+    
+  .car-ico {
+    font-size: 50px;
+    padding: 14px;
+    color: var(--varcolor02);
+  }
+    
+  /* 3.2 - SECTION 02 - About Repasse  */
+  #about-img {
+    background-image: url('../images/banner.png');
+    /* background-position: cover; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #conect-title {
+    color: var(--varcolor01);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+  }
+     
+  #about-logos,
+  .m-txt {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #about-logos img {
+    margin-top: 15px;
+    width: 180px;
+  }
+      
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .txt-title {
+    color: var(--varcolor01);
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 5px;
+  }
+
+  .txt-desc {
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+   /* About CTA button */
+   .about-button {
+    background-color: var(--varcolor02);
+    color: var(--varcolor01);
+    font-weight: 700;
+    padding: 12px;
+    width: 260px;
+    margin-bottom: 50px;
+  }
+  
+  .about-button:hover {
+    background-color: var(--varcolor03);
+    font-weight: 700;
+    color: var(--varcolor04);
+  }
+       
+  /* 3.3 - SECTION 03 - How it works */
+  #howItWorks {
+    background: #ffffff;
+    color: var(--varcolor05);
+    margin: 100px 0px 0px;
+  }
+    
+  #primary-txt {
+    color: var(--varcolor05);
+  }
+
+  /* 3.4 - SECTION 04 - How to sign up */
+  #howSignUp {
+    margin-bottom: 100px;
+  }
+  
+  #img-signUp img{
+    width: 330px;
+  }
+    
+  /* 3.5 - SECTION 05 - Benefits */
+  #more-benefits {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -170px;
+  }
+
+  #benefits-title {
+    text-align: center;
+    color: var(--varcolor03);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 230px;
+    margin-bottom: 25px;
+  }
+    
+  /* Mini-cards benefits */
+  .card {
+    height: 200px;
+    width: 195px;
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: var(--varcolor02);
+  }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 25px;
+  }
+    
+  .card-top {
+    margin-top: -150px;
+  }
+    
+  .icon-benefits {
+    width: 100px;
+  }
+   
+  #benefits-button {
+    background-color: var(--varcolor01);
+    color: var(--varcolor02);
+    margin-bottom: 0px;
+  }
+
+  #benefits-bottom {
+    background-color: var(--varcolor04);
+    margin-top: 60px;
+  }
+
+  /* 3.6 - SECTION 06 - Value */
+  #value-banner {
+    background-color: var(--varcolor04);
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    background-position: cover; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #card-value {
+    width: 550px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #F5F5F5;
+    padding: 10px 20px 10px 20px;
+  }
+
+  #value-list {
+    text-align: left;
+    color: var(--varcolor04);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .list-group-item {
+    background-color: var(--varcolor02);
+    margin-left: -15px;
+    margin-bottom: 10px solid var(--varcolor04);
+  }
+
+  #value-title {
+    color: var(--varcolor01);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+  }
+
+  #value-title, 
+  #value-real,
+  #value-cash,
+  #value-pay {
+    color: var(--varcolor01);
+  }
+
+  #value-real {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #value-cash {
+    font-size: 90px;
+    font-weight: 800;
+  }
+
+  #value-pay {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  #value-button {
+    width: 385px;
+    background-color: var(--varcolor04);
+    color: var(--varcolor02);
+  }
+    
+  /* 
+  ----------------------------
+  04 - FAQ  
+  ----------------------------
+  */
+  #FAQ {
+    margin: 100px 0px 30px 0px;
+    padding: 0px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .accordion-body {
+    color: #6f6f6f;
+  }
+  
+  /*  
+  ----------------------------
+  05 - CONTACT 
+  ----------------------------
+  */
+
+  #contactTitle {
+    color: #6f6f6f;
+  }
+  
+  #contactTxt {
+    color: var(--varcolor01);
+    font-weight: 800;
+    font-size: 33px;
+  }
+
+  .contact {
+    font-weight: 200;
+    font-size: 0.9em;
+  }
+
+  .contact-txt {
+    color: var(--varcolor04);
+    opacity: 0.15;
+    font-weight: 900;
+    text-shadow: -25px -25px 45px var(--varcolor05);
+  }
+
+  #whats-icon,
+  #mail-icon {
+    font-size: 1.5em;
+    right: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    }
+    
+  #whats-icon {
+    color: green;
+  }
+    
+  #mail-icon {
+    color: var(--varcolor01);
+  }
+    
+  .contact-link h4 {
+    text-decoration: none;
+    color: var(--varcolor04);
+  }
+
+  .contact-icon {
+    font-size: 4.5em;
+    margin-top: -120px;
+    margin-left: 190px;
+    color: var(--varcolor03);
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  .comerc {
+    font-size: 4.5em;
+    margin-left: 240px;
+  }
+
+  #car-img {
+    width: 464.309px;
+    height: 245.896px;
+  }
+
+  /* Whatsapp Float Button  */
+  #whats-chat {
+    background-color: rgb(89 , 245, 122);
+    bottom: 20px;
+    box-shadow: 2px 2px 25px rgb(89 , 245, 122);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 0 20px;
+    position: fixed;
+    transition: .5s all;
+    width: 200px;
+    z-index: 9999;
+  }
+    
+  #whats-chat.shrink {
+    overflow: hidden;
+    transition: .5s all;
+    width: 50px;
+  }
+    
+  #whats-chat img {
+    height: 50px;
+    width: 50px;
+  }
+    
+  #whats-chat a {
+    text-decoration: none;
+  }
+    
+  #whats-chat a .flex-items{
+    display: flex;
+    align-items: center;
+  }
+    
+  .flex-items span{
+    color: var(--varcolor04);
+    display: none;
+    font-weight: 700;
+    margin-left: 10px;
+    min-width: 160px;
+  }
+    
+  #whats-chat a span.show {
+    display: flex;
+    transition: .6s all;
+  }
+    
+  .float {
+    animation: float .7s infinite alternate ease-in-out;
+  }
+    
+  @keyframes float {
+    from {
+      transform: translate3d(0, 0, 0);
+      filter: brightness(90%);
+    } to {
+      transform: translate3d(0, -15px, 0);
+      filter: brightness(150%);
+    }
+  }
+    
+  /* Btn Back to Top  */
+  #top-btn {
+    width:35px;
+    height: 35px;
+    bottom: 20px;
+    right: 25px;
+    position: fixed;
+    z-index: 99999;
+  } 
+    
+  #top-btn:hover {
+    filter: brightness(130%);
+  }
+    
+  #top-btn i {
+    font-size: 1.3em;
+    color: #fff;
+  }
+    
+  /* 
+  ----------------------------
+  06 - FINAL CTA 
+  ----------------------------
+  */
+  #final-cta {
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-top: -25px;
+  }
+    
+  #txt-final {
+    margin-top: 70px;
+  }
+    
+  #finalcta-txt {
+    color: #fff;
+    font-weight: 900;
+  }
+    
+  #finalcta-btn {
+    display: flex;
+    justify-content: center;
+    
+  }
+    
+  #finalcta-btn a {
+    border-radius: 4px;
+    color: var(--varcolor01);
+    font-weight: 700;
+    padding: 14px;
+    width: 400px;
+  }
+    
+  #finalcta-btn a:hover {
+    filter: brightness(100%);
+  }
+    
+  /* 
+  ----------------------------
+  07 - FOOTER 
+  ----------------------------
+  */
+  #footer-area a {
+    text-decoration: none;
+    color: var(--varcolor02);
+  }
+    
+  #footer-area a:hover {
+    color: var(--varcolor02);
+  }
+    
+  #footer-area h4 {
+    margin: 30px 0;
+  }
+  
+  .footer-txt {
+    font-size: 15px;
+  }
+    
+  .bottom-txt {
+    margin-bottom: 5px;
+  }
+    
+  #logo-footer img {
+    width: 200px;
+    padding-top: 15px;
+  }
+    
+  #footer-buttons {
+    margin-top: 35px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    gap: 10px;
+    height: 40px;
+    justify-content: end;
+    font-size: 12px !important;
+  }
+    
+.footerp {
+  color: var(--varcolor01);
+}
+  
+  /* 7.1 - FOOTER COPYRIGHT */
+  #copy-footer {
+    background-color: var(--varcolor04);
+    padding: 10px;
+  }
+  
+  #copy-footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--varcolor02);
+  }
+  
+  /* 
+  ----------------------------
+  RESPONSIVE
+  ---------------------------- 
+  */
+  /* MEDIA QUERIES */
+  /* Mobile */
+    @media(min-width: 245px) and (max-width: 757.99px) {
+    :target {
+      scroll-margin-top: 12em;
+    } 
+    h3:target {
+      scroll-margin-top: 20em;
+    }
+    body, html {
+      overflow-x: hidden!important;
+    }
+    .mobileBtn {
+      width: 255px !important;
+      padding: 16px !important;
+      margin: auto !important;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Back To Top */
+    #top-btn {
+      display: none;
+    }
+
+    /* Navbar */
+    .navbar-brand img {
+      width: 150px;
+    }
+    .nav-link {
+      font-size: 9px;
+      text-align: left;
+    }
+    #button-navbar {
+      width: 100px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    /* Header */
+    #header-hero-bg {
+      background-image: url('../images/headerMobile.png'); 
+      background-position: cover !important;
+      margin-top: 60px;
+    }
+    #header-img, 
+    #header-title, 
+    #header-value,
+    #value-style,
+    #header-slogan {
+      display: none;
+    }
+    #header-text {
+      margin-bottom: 60px;
+    }
+    #header-button {
+      margin-top: 190px;
+      margin-left: -120px;
+      width: 150px;
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    /* 3.1 - SECTION 01 Principal */
+    #principal {
+      padding-bottom:20px;
+      font-size: .8em;
+    }
+    #titleprincipal {
+      font-size: 1.5em;
+    }
+    .car-ico {
+      font-size: 30px;
+    }
+
+    /* 3.2 - SECTION 02 About Repasse */
+    #about {
+      background: var(--varcolor04);
+    }
+    #about-logos,
+    #about-description {
+      flex-direction: column;
+    }
+    #conect-title {
+      font-size: 20px;
+      margin: 60px 15px 30px 15px;
+    }
+    #about-logos img {
+      width: 130px;
+      padding-bottom: 10px;
+    }
+    .card-about {
+      padding: 15px 15px 0px 15px !important;
+    }
+    .txt-title {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    .txt-desc {
+      font-size: 13px;
+      padding-top: 5px;
+    }
+    .about-button{
+      width: 200px;
+      font-size: 15px;
+    }
+
+    /* 3.3 - SECTION 03 - How it works */
+    #howItWorks {
+      margin: -20px;
+    }
+    #howItWorks h2 {
+      font-size: 2em;
+    }
+    #howItWorks h3 {
+      font-size: 1.3em;
+      text-align: justify;
+      padding: 0px 30px;
+    }
+    #containerHowItWorks {
+      padding-top: 0px;
+    }
+    #img-gif {
+      width: 350px;
+    }
+    .txtbox {
+      padding: 30px;
+    }
+
+    /* 3.4 - SECTION 04 - How to sign up */
+    #img-signUp {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    #img-signUp img{
+      width: 235px;
+    }
+    #SignUp-text  {
+      padding: 30px;
+    }
+    #SignUp-text h2 {
+      font-size: 1.8em;
+      text-align: center;
+      margin-top: -65px;
+    }
+    #SignUp-text h3 {
+      font-size: 1.3em;
+      text-align: justify;
+    }
+    #SignUpButton {
+      margin-bottom: -20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 3.5 - SECTION 05 - Benefits */
+    #benefits {
+      padding: 0px !important;
+    }
+    #benefits-title {
+      font-size: 23px;
+      margin-top: 85px;
+    }
+    #more-benefits h2 {
+      font-size: 1.4em;
+    } 
+    #more-benefits img {
+      width: 72px;
+      height: 72px;
+    }
+    .card {
+      height: 150px;
+      margin-bottom: 40px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      border: none !important;
+      color: #fff;
+      border: 2px solid var(--varcolor03);
+      border-radius: 30px 0px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .margin-mobile {
+      margin-top: 0px;
+    } 
+    #benefits-bottom {
+      padding-top: 140px;
+      margin-top: -30px;
+    }
+    .mobile-button {
+      padding-bottom: 10px !important;
+    }
+    #benefits-button {
+      width: 200px;
+      font-size: 15px;
+    }
+
+    /* 3.6 - SECTION 06 - Value */
+    #value {
+      margin-top: 0px;
+      height: 400px;
+    }
+    #value-banner {
+      padding-bottom: 15px;
+    }
+    #card-value {
+      margin-top: 70px;
+      margin-bottom: 70px;
+      width: 270px;
+      height: 654px;
+    }
+    #value-list {
+      width: 204px;
+      height: 254px;
+      font-size: 11px;
+      margin: auto;
+    }
+    #value-title {
+      margin-top: 140px !important;
+      font-size: 20px;
+    }
+    #value-real,
+    #value-pay {
+      font-size: 13px;
+    }
+    #value-cash {
+      font-size: 47px;
+    }
+    #value-button {
+      width: 200px;
+      font-size: 15px;
+    }
+
+    /* 04 - FAQ   */
+    #FAQ {
+      margin: 450px 0px 10px 0px !important;
+    }
+    #FAQ p{
+      font-size: .8em !important;
+    }
+    #FAQtitle {
+      font-size: 1.8em !important;
+      margin: 25px 0px 10px 0px;
+    }
+    .accordion-item h2,
+    .accordion-body {
+      text-align: justify;
+    }
+
+    /* 05 - CONTACT  */
+    #contactTitle {
+      font-size: 1em !important;
+      padding: 0px !important;
+    }
+    #contactTxt {
+      font-size: 18px;
+      margin: 10px;
+      display: block;
+    }
+    #contactBox h3 {
+      font-size: 1.3em !important;
+      text-align: left !important;
+    }
+    #contactBox h4 {
+      font-size: 1em !important;
+    }
+    #contactBox {
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    .contact {
+      font-size: 14px !important;
+    }
+    .contact-link {
+      font-size: 13px;
+    }
+    #car-img {
+      width: 274.289px;
+      height: 145.262px;
+    }
+    
+    /* 06 - FINAL CTA  */
+    #final-cta {
+      height: 250px;
+    }
+    #txt-final {
+      margin-top: 15px !important;
+    }
+    #finalcta-txt {
+      font-size: 1em;
+      margin-top: 10px;
+      text-align: justify;
+    }
+    #finalcta-btn a{
+      width: 230px;
+      font-size: 14px;
+      margin-top: 25px;
+    }
+
+    /* 07 - FOOTER  */
+    #logo-footer img {
+      display: none;
+    }
+    #footer-buttons a {
+      padding: 12px;
+      z-index: 1;
+    }
+    .footer-txt{
+      font-size: 14px;
+    }
+    #footerLogin,
+    #footerSignUp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #footerLogin  {
+      width: 80px; 
+    }
+    #footerSignUp  {
+      width: 170px; 
+    }
+    #footer-area h4 {
+      margin: 30px 0px;
+    }
+    #copy-footer p {
+      margin-top: 5px;
+      font-size: .5em;
+      padding:0px 10px;
+    }
+  }
+  
+  /* Tablet */
+ @media(min-width: 768px) and (max-width: 991px) {
+  body, html {
+    overflow-x: hidden!important;
+  }
+  .tabletLg {
+    width: 300px;
+    height: 85px;
+    font-size: 1.6em;
+  }
+  /* Navbar */
+  .navbar-brand img {
+    width: 180px;
+  }
+  .nav-link {
+    font-size: 15px;
+    text-align: left;
+  }
+  #button-navbar {
+    width: 100px;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  /* Header */
+  #header-text {
+      margin-top: 170px;
+  }
+  #header-title {
+      font-size: 2.5em;  
+  }
+  .header-description {
+      margin-top: -200px !important;
+      font-size: 1.4em;
+      text-align: center;
+  }
+  .mobileBtn {
+    width: 300px !important;
+    padding: 16px !important;
+    font-size: 1.2em !important;
+  }
+  .light-button,
+  .blue-button {
+      font-size: 1em;
+  }
+  .light-button {
+      width: 100px;
+      margin-right: 10px;
+      padding: 10px;
+  }
+  .blue-button {
+      width: 160px;
+  }
+  #header-hero-bg {
+    background-image: url('../images/header.png');
+    background-position: center;
+    background-size: auto;
+  }
+  #header-img  {
+    width: 90%;
+  }
+  /* SECTION 02 - About Repasse */
+  #about {
+    background: var(--varcolor04);
+  }
+  #conect-title {
+    font-size: 27px !important;
+  }
+  .logo-img img {
+    width: 150px;
+  }
+  /* 3.5 - SECTION 05 Benefits */
+  #benefits-title {
+    margin-top: 150px;
+  }
+  .card-title {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .card-top {
+    margin-top: -100px;
+  }
+  .card-text {
+    font-size: .9em;
+  }
+  #benefits-bottom {
+    margin-top: 20px;
+  }
+  /* 3.4 - SECTION 04 - How to sign up */
+  #img-signUp img{
+    width: 235px;
+  }
+  #SignUp-text h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #SignUp-text h3 {
+    font-size: 1.3em;
+    text-align: justify;
+  }
+  /* 3.6 - SECTION 06 - Value  */
+  #banner-value {
+    background-image: none!important;
+    background: var(--varcolor04);
+    box-shadow: 2px 2px 50px var(--varcolor01);
+    padding: 60px;
+    padding-bottom: 100px;
+  }        
+  #title-value {
+    font-size: 2em;
+    text-align: center;
+  }
+  .value-title {
+    margin-top: 0px;
+    color: #fff;
+    font-weight: 700;  
+  } 
+  .value-title h3 {
+    font-size: 1.6em;
+    text-align: justify;
+  } 
+  .value-txt {
+    margin-top: 30px;
+  }
+  #negative-border {
+    margin: 50px;
+  }
+  /* 04 - FAQ   */
+  #FAQ {
+    margin: 0px 0px 30px 0px;
+  }
+  #FAQ p{
+    font-size: 1em;
+  }
+  #FAQtitle {
+    font-size: 2em;
+    margin: 30px 0px 0px 10px;
+  }
+  .accordion-item h2,
+  .accordion-body {
+    text-align: justify;
+  }
+  .line-center {
+    margin-top: 10px;
+  }
+   /* 05 - CONTACT  */
+   #contactTitle {
+    font-size: 1.6em;
+  }
+  #contactTxt {
+    margin: 10px;
+    display: block;
+    justify-content: center;
+  }
+  #contactBox h3 {
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  #contactBox {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+  
+
+  
+ 
